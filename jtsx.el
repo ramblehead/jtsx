@@ -937,8 +937,8 @@ MODE, MODE-MAP, TS-LANG-KEY, INDENT-VAR-NAME variables allow customization
   ;; JSX folding with Hideshow
   (add-to-list 'hs-special-modes-alist
                `(,mode
-                 "{\\|(\\|<[^/][^>]*>"
-                 "}\\|)\\|</[^/>]*[^/]>"
+                 "{\\|(\\|[[]\\|<[^/][^>]*>"
+                 "}\\|)\\|[]]\\|</[^/>]*[^/]>"
                  "/[*/]"
                  jtsx-hs-forward-sexp
                  nil
